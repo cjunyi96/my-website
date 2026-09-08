@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | 大學專題展示</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">四年專題</a></li>
+            <li><a href="#contact">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero 英雄區塊 -->
+    <header id="about" class="hero">
+        <div class="hero-content">
+            <span class="badge">Welcome to my space</span>
+            <h1>你好，我是 <span class="highlight">[你的名字]</span></h1>
+            <p class="tagline">[你的定位，例如：專注於 Web 開發與 AI 應用的軟體工程師]</p>
+            <p class="bio">這裡記錄了我大學四年來，從探索到實踐的代表性專題作品。</p>
+            <a href="#projects" class="btn primary-btn">查看專題作品</a>
+        </div>
+    </header>
+
+    <!-- 專題展示區塊 -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>大學四年專題展示</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="y1">大一</button>
+                <button class="filter-btn" data-filter="y2">大二</button>
+                <button class="filter-btn" data-filter="y3">大三</button>
+                <button class="filter-btn" data-filter="y4">大四 (畢業專題)</button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- 大一專題 -->
+            <div class="project-card" data-year="y1">
+                <div class="card-tag">大一 · 基礎探索</div>
+                <h3>主控台遊戲與基礎語法應用</h3>
+                <p>運用 C/C++ 實作圖形化邏輯演算，學習基礎資料結構與演算法邏輯。</p>
+                <div class="tags">
+                    <span>C++</span>
+                    <span>Data Structures</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="link-btn">GitHub</a>
+                </div>
+            </div>
+
+            <!-- 大二專題 -->
+            <div class="project-card" data-year="y2">
+                <div class="card-tag">大二 · 進階實作</div>
+                <h3>全端響應式 Web 應用系統</h3>
+                <p>打造支援前端互動與後端 API 對接的系統，包含資料庫設計與會員驗證機制。</p>
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>MySQL</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="link-btn">GitHub</a>
+                    <a href="#" class="link-btn preview">Demo</a>
+                </div>
+            </div>
+
+            <!-- 大三專題 -->
+            <div class="project-card" data-year="y3">
+                <div class="card-tag">大三 · 跨域整合</div>
+                <h3>數據分析與機器學習模型</h3>
+                <p>使用 Python 分析大規模數據集，訓練分類模型並繪製可視化圖表分析結果。</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-Learn</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="link-btn">GitHub</a>
+                </div>
+            </div>
+
+            <!-- 大四專題 -->
+            <div class="project-card featured" data-year="y4">
+                <div class="card-tag highlight-tag">大四 · 畢業專題</div>
+                <h3>智慧型邊緣運算與影像辨識系統</h3>
+                <p>整合電腦視覺與深度學習，實現即時動態追蹤與預警，取得院展優等獎項。</p>
+                <div class="tags">
+                    <span>PyTorch</span>
+                    <span>OpenCV</span>
+                    <span>Raspberry Pi</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="link-btn">GitHub</a>
+                    <a href="#" class="link-btn preview">Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 / 聯絡區 -->
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p>歡迎與我交流或討論合作機會！</p>
+        <div class="social-links">
+            <a href="https://github.com/你的帳號" target="_blank">GitHub</a>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2026 [你的名字]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
